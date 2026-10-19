@@ -1,5 +1,7 @@
 # Tiny Dungeon – One More Room
 
+<p align="center"><img src="docs/media/hero.png" alt="Tiny Dungeon: the main menu, a crowded fight, the Dungeon Dragon's fire breath and the upgrade cards"></p>
+
 A portrait (9:16) pixel-art roguelite auto-battler for YouTube Playables. It also runs in any browser.
 
 Built with Phaser 3.90, TypeScript and Vite.
@@ -21,6 +23,11 @@ Built with Phaser 3.90, TypeScript and Vite.
     <td><img src="docs/media/20-shop.png" width="200" alt="Permanent shop"></td>
     <td><img src="docs/media/10-heroes-knight.png" width="200" alt="Knight hero"></td>
     <td><img src="docs/media/treasure-modal.png" width="200" alt="Treasure room"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/media/fight-spider-fight.png" width="200" alt="Spider Queen fight"></td>
+    <td><img src="docs/media/tele-lich-lichSpiral.png" width="200" alt="The Lich's soul-bolt spiral"></td>
+    <td><img src="docs/media/fight-mimic-reveal.png" width="200" alt="Mimic King bursting out of a chest"></td>
   </tr>
 </table>
 
@@ -63,7 +70,7 @@ Run these in `tiny-dungeon/`.
 | `npm run sim -- --runs 2000 --skill average --meta none` | Headless balance simulation, see [docs/BALANCE.md](docs/BALANCE.md) |
 | `node tools/smoke.mjs` | Headless Playwright play-through of gameplay |
 | `node tools/ui-smoke.mjs` | Headless Playwright play-through of the UI |
-| `python3 tools/build_assets.py` | Rebuilds sprite atlases and mp3s from the CC0 packs in `../assets` |
+| `python3 tools/build_assets.py` | Rebuilds sprite atlases and mp3s from the CC0 source packs in the [felixarvid2/test](https://github.com/felixarvid2/test) asset library: clone that repo next to this one, or set `TD_ASSET_LIBRARY` to its `assets/` folder. The built files are committed, so you only need this when changing art or sounds. |
 
 The smoke scripts write screenshots to `docs/screens/` (gitignored).
 
